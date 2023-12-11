@@ -1,0 +1,45 @@
+services:
+  database:
+    image: nginx
+    ports:
+      - 8080:80
+  posta:
+    image: nginx
+    ports:
+      - 8081:80
+  magazzino:
+    image: nginx
+    ports:
+      - 8082:80
+  amministrazione:
+    image: nginx
+    ports:
+      - 8083:80
+  ricerca:
+    image: nginx
+    ports:
+      - 8084:80
+  meccanica:
+    image: nginx
+    ports:
+      - 8085:80
+  disegno:
+    image: nginx
+    ports:
+      - 8086:80
+  distribuzione:
+    image: nginx
+    ports:
+      - 8087:80
+  SAP:
+    image: nginx
+    ports:
+      - 8088:80
+  veicoli:
+    image: nginx
+    ports:
+      - 8089:80
+  officina:
+    image: nginx
+    ports:
+      - 8090:80
