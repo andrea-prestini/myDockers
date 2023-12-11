@@ -1,0 +1,11 @@
+services:
+  tranformers-notebook:
+    build: ./
+    ports:
+      - 8000:8888
+
+    environment:
+      - JUPYTER_TOKEN=bicher
+
+    volumes:
+      - ./ :/home/jovyan
