@@ -1,4 +1,3 @@
-import debugpy
 from fastapi import FastAPI
 import redis
 
@@ -6,8 +5,6 @@ app = FastAPI()
 
 
 r = redis.Redis(host="redis", port=6379)
-
-debugpy.listen(("0.0.0.0", 5678))
 
 
 @app.get("/")
