@@ -1,0 +1,19 @@
+
+FROM python:3.9.18-slim as BUILD_IMAGE
+
+WORKDIR /src
+
+COPY ./src .
+
+CMD ["python", "main.py"]
+
+
+
+FROM python:3.9-slim-bullseye as PRODUCTING_IMAGE
+
+WORKDIR /src
+
+COPY --from=BUILD_IMAGE /src .
+
+CMD ["python", "main.py"]
+
